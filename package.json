@@ -1,0 +1,17 @@
+{
+  "name": "botwiew",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "easy-soap-request": "^3.2.1",
+    "telegraf": "^3.37.0",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.23"
+  },
+  "license": "ISC"
+}
