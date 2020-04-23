@@ -14,16 +14,22 @@ const sampleHeaders = {
 var rest;
 const xml = fs.readFileSync("./dolar.xml", "utf-8");
 async function makeRequest() {
-  const { response } = await soapRequest({
+  const {
+    response
+  } = await soapRequest({
     url: url,
     headers: sampleHeaders,
     xml: xml,
     timeout: 1000
   });
-  const { headers, body, statusCode } = response;
+  const {
+    headers,
+    body,
+    statusCode
+  } = response;
 
   var options = {
-    elementNameFn: function(val) {
+    elementNameFn: function (val) {
       if (val.includes("soap:")) {
         val = val.substr(5);
       }
@@ -53,7 +59,7 @@ async function makeRequest() {
   }
 
   var finaldeger1;
-  await xml2js.parseString(finaldeger, function(err, result) {
+  await xml2js.parseString(finaldeger, function (err, result) {
     finaldeger1 = result;
   });
 
@@ -82,6 +88,8 @@ bot.hears("/altin", ctx => {
     ctx.reply(
       ` ${x.adi} = Satiş: ${x.satis} -- Aliş :${x.alis} Zaman :${x.tarih}`
     );
+  }).catch(err => {
+    console.log(err);
   });
 });
 bot.launch();
