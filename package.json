@@ -9,11 +9,11 @@
   },
   "author": "",
   "dependencies": {
-    "easy-soap-request": "^3.2.1", 
+    "easy-soap-request": "^3.2.1",
     "telegraf": "^3.37.0",
     "xml-js": "^1.6.11",
     "xml2js": "^0.4.23",
-    "pm2" : "*"
+
   },
   "license": "ISC"
 }
