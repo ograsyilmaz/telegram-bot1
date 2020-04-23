@@ -4,15 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "startnode": "pm2 start index.js"
+    "start": "node index.js"
   },
   "author": "",
   "dependencies": {
     "easy-soap-request": "^3.2.1",
     "telegraf": "^3.37.0",
     "xml-js": "^1.6.11",
-    "xml2js": "^0.4.23",
+    "xml2js": "^0.4.23"
 
   },
   "license": "ISC"
