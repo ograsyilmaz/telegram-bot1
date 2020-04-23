@@ -5,15 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "startnode": "forever start index.js"
+    "startnode": "pm2 start index.js"
   },
   "author": "",
   "dependencies": {
-    "easy-soap-request": "^3.2.1",
-    "forever": "^2.0.0",
+    "easy-soap-request": "^3.2.1", 
     "telegraf": "^3.37.0",
     "xml-js": "^1.6.11",
-    "xml2js": "^0.4.23"
+    "xml2js": "^0.4.23",
+    "pm2" : "*"
   },
   "license": "ISC"
 }
